@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+html {
+  --bg-color: #fff;
+  --bg-color-tr: rgba(255, 255, 255, 0.5);
+  --text-color: black;
+}
+
+html[data-theme=dark] {
+  --bg-color: #00000d;
+  --bg-color-tr: rgba(0, 0, 0, 0.5);
+  --text-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px 4em;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: white;
+  background-image: linear-gradient(90deg, rgb(0, 83, 181), rgb(1, 141, 255));
+  border-radius: 50px;
+  border: none;
+}
+
+/* This is just to transition when you change the viewport size. */
+* {
+  transition: all 0.25s ease-out;
+}/*# sourceMappingURL=primary.css.map */
