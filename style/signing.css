@@ -48,7 +48,6 @@ body {
 .container .form-container {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   width: 60%;
   padding: 0 5vw;
@@ -59,23 +58,23 @@ body {
   gap: 1em;
 }
 .container .form-container .sign-up {
+  font-size: 1.3em;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   transform: scale(0.8);
   position: absolute;
-  right: 0;
+  right: 1%;
   top: 5%;
 }
-.container .form-container .sign-up .btn {
-  padding: 0.5em 0.8em;
+.container .form-container .sign-up .register {
+  color: #028afb;
+  font-weight: 600;
 }
 .container .form-container .title {
   margin-bottom: 1em;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   text-align: center;
 }
@@ -100,7 +99,7 @@ body {
   font-size: 1.3em;
   padding: 1em 1em;
   margin-bottom: 1em;
-  border-radius: 50px;
+  border-radius: 15px;
   background-color: #e9e9e9;
   border: 2px solid black;
   color: #0360c4;
@@ -109,9 +108,6 @@ body {
   outline-color: #048afb;
 }
 .container .form-container form .input:focus::-moz-placeholder {
-  color: #0360c4;
-}
-.container .form-container form .input:focus:-ms-input-placeholder {
   color: #0360c4;
 }
 .container .form-container form .input:focus::placeholder {

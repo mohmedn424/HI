@@ -16,7 +16,7 @@ a {
   font-weight: 700;
   color: white;
   background-image: linear-gradient(90deg, rgb(0, 83, 181), rgb(1, 141, 255));
-  border-radius: 50px;
+  border-radius: 15px;
   border: none;
 }
 
@@ -25,7 +25,6 @@ a {
   align-items: center;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   -webkit-user-drag: none;
 }
@@ -51,9 +50,8 @@ a {
   width: var(--size);
   height: var(--size);
   filter: blur(calc(var(--size) / 5));
-  background-image: linear-gradient(hsla(158deg, 82%, 57%, 0.85), hsl(252deg, 82%, 57%));
-  -webkit-animation: rotate var(--speed) var(--easing) alternate infinite;
-          animation: rotate var(--speed) var(--easing) alternate infinite;
+  background-image: linear-gradient(hsla(158, 82%, 57%, 0.85), hsl(252, 82%, 57%));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
   z-index: -1;
 }
@@ -61,14 +59,6 @@ a {
 @media (min-width: 720px) {
   .gradient {
     --size: 600px;
-  }
-}
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 @keyframes rotate {
@@ -79,28 +69,12 @@ a {
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes arrow {
-  0% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
 @keyframes arrow {
   0% {
     transform: translateY(-10px);
   }
   100% {
     transform: translateY(0px);
-  }
-}
-@-webkit-keyframes icon {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-10px);
   }
 }
 @keyframes icon {
@@ -120,7 +94,6 @@ a {
 .start .scroll {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   cursor: pointer;
   color: var(--text-color);
@@ -132,8 +105,7 @@ a {
 }
 .start .scroll img {
   height: 30px;
-  -webkit-animation: arrow 1s infinite alternate;
-          animation: arrow 1s infinite alternate;
+  animation: arrow 1s infinite alternate;
 }
 .start .hero-container {
   display: flex;
@@ -185,7 +157,6 @@ a {
 .start nav {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   margin: 30px 6em;
   display: flex;
@@ -301,11 +272,9 @@ a {
 .features-container .cards .card {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   color: white;
   width: 320px;
-  max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
   padding: 45px 20px;
@@ -398,9 +367,8 @@ a {
   width: var(--size);
   height: var(--size);
   filter: blur(calc(var(--size) / 5));
-  background-image: linear-gradient(hsla(158deg, 82%, 57%, 0.85), hsl(252deg, 82%, 57%));
-  -webkit-animation: rotate var(--speed) var(--easing) alternate infinite;
-          animation: rotate var(--speed) var(--easing) alternate infinite;
+  background-image: linear-gradient(hsla(158, 82%, 57%, 0.85), hsl(252, 82%, 57%));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
   z-index: -2;
 }
@@ -425,7 +393,6 @@ a {
 .rocket-section .right .cards-container .card {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   font-size: 1.4em;
   color: white;
@@ -441,8 +408,7 @@ a {
   height: 80px;
 }
 .rocket-section .right .cards-container .card:hover img {
-  -webkit-animation: icon 0.5s infinite alternate;
-          animation: icon 0.5s infinite alternate;
+  animation: icon 0.5s infinite alternate;
 }
 
 .contact-container {
@@ -497,18 +463,10 @@ a {
 .contact-container .left .form .form__field::-moz-placeholder {
   color: transparent;
 }
-.contact-container .left .form .form__field:-ms-input-placeholder {
-  color: transparent;
-}
 .contact-container .left .form .form__field::placeholder {
   color: transparent;
 }
 .contact-container .left .form .form__field:-moz-placeholder-shown ~ .form__label {
-  font-size: 1.3rem;
-  cursor: text;
-  top: 20px;
-}
-.contact-container .left .form .form__field:-ms-input-placeholder ~ .form__label {
   font-size: 1.3rem;
   cursor: text;
   top: 20px;

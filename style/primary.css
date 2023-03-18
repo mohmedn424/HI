@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "poppins";
+  font-family: 'poppins';
 }
 
 html {
@@ -13,7 +13,7 @@ html {
   --text-color: black;
 }
 
-html[data-theme=dark] {
+html[data-theme='dark'] {
   --bg-color: #00000d;
   --bg-color-tr: rgba(0, 0, 0, 0.5);
   --text-color: white;
@@ -35,12 +35,16 @@ a {
   font-size: 1.3em;
   font-weight: 700;
   color: white;
-  background-image: linear-gradient(90deg, rgb(0, 83, 181), rgb(1, 141, 255));
-  border-radius: 50px;
+  background-image: linear-gradient(
+    90deg,
+    rgb(0, 83, 181),
+    rgb(1, 141, 255)
+  );
+  border-radius: 15px;
   border: none;
 }
 
 /* This is just to transition when you change the viewport size. */
 * {
   transition: all 0.25s ease-out;
-}/*# sourceMappingURL=primary.css.map */
+} /*# sourceMappingURL=primary.css.map */
