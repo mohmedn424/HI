@@ -14,8 +14,10 @@ const registerBtn = document.querySelector('.register');
 const container = document.querySelector('.container');
 const form1 = document.querySelector('#form-1');
 const form2 = document.querySelector('#form-2');
-const from3 = document.querySelector('#form-3');
+const form3 = document.querySelector('#form-3');
+const form4 = document.querySelector('#form-4');
 const btn2 = document.querySelector('#btn-2');
+const btn3 = document.querySelector('#btn-3');
 const image = document.querySelector('.img');
 
 registerBtn.addEventListener('click', (e) => {
@@ -33,7 +35,15 @@ btn2.addEventListener('click', (e) => {
   image.src = './assets/form-3.png';
   container.classList.toggle('reverse');
   form2.style.display = 'none';
-  from3.style.display = 'flex';
+  form3.style.display = 'flex';
+});
+btn3.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  image.src = './assets/form-4.png';
+  container.classList.toggle('reverse');
+  form3.style.display = 'none';
+  form4.style.display = 'flex';
 });
 
 // The DOM element you wish to replace with Tagify

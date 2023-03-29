@@ -238,72 +238,6 @@ a {
         }
       }
     }
-    /*Simple css to style it like a toggle switch*/
-    .theme-switch-wrapper {
-      display: flex;
-      align-items: center;
-
-      em {
-        margin-left: 10px;
-        font-size: 1.1em;
-        font-style: normal;
-        font-weight: 700;
-        color: var(--text-color);
-      }
-    }
-    .theme-switch {
-      display: inline-block;
-      height: 34px;
-      position: relative;
-      width: 60px;
-    }
-
-    .theme-switch input {
-      display: none;
-    }
-
-    .slider {
-      background-color: #ccc;
-      bottom: 0;
-      cursor: pointer;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      transition: 0.2s;
-    }
-
-    .slider:before {
-      background-color: #fff;
-      bottom: 4px;
-      content: '';
-      height: 26px;
-      left: 4px;
-      position: absolute;
-      transition: 0.2s;
-
-      width: 26px;
-    }
-
-    input:checked + .slider {
-      background-image: linear-gradient(
-        90deg,
-        rgba(0, 83.26, 181, 1),
-        rgba(1, 141, 255, 1)
-      );
-    }
-
-    input:checked + .slider:before {
-      transform: translateX(26px);
-    }
-
-    .slider.round {
-      border-radius: 34px;
-    }
-
-    .slider.round:before {
-      border-radius: 50%;
-    }
   }
 }
 
@@ -450,6 +384,7 @@ a {
     flex-direction: column;
     gap: 3em;
     text-align: center;
+    color: var(--text-color);
     .cards-container {
       display: flex;
       flex-direction: column;
