@@ -160,6 +160,24 @@ body {
       }
     }
   }
+
+  .choices {
+    width: 100%;
+    gap: 1em;
+    .btn-cta-choice {
+      cursor: pointer;
+      font-size: 1.5em;
+      padding: 0.6em;
+      border-radius: 15px;
+      background-color: var(--input-bg);
+      border: none;
+      transition: 50ms ease-in;
+      &:hover {
+        color: #0360c4;
+        outline: #0360c4 2px solid;
+      }
+    }
+  }
 }
 
 .reverse {

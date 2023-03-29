@@ -12,22 +12,43 @@ window.addEventListener('resize', () => {
 
 const registerBtn = document.querySelector('.register');
 const container = document.querySelector('.container');
+const formChoice = document.querySelector('#form-choice');
 const form1 = document.querySelector('#form-1');
 const form2 = document.querySelector('#form-2');
 const form3 = document.querySelector('#form-3');
 const form4 = document.querySelector('#form-4');
 const btn2 = document.querySelector('#btn-2');
 const btn3 = document.querySelector('#btn-3');
+const userBtn = document.querySelector('#user');
+const placesBtn = document.querySelector('#places');
 const image = document.querySelector('.img');
 
 registerBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
-  image.src = './assets/form-2.png';
+  image.src = './assets/form-5.png';
   container.classList.toggle('reverse');
   form1.style.display = 'none';
+  formChoice.style.display = 'flex';
+});
+
+userBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  image.src = './assets/form-2.png';
+  container.classList.toggle('reverse');
+  formChoice.style.display = 'none';
   form2.style.display = 'flex';
 });
+
+// registerBtn.addEventListener('click', (e) => {
+//   e.preventDefault();
+
+//   image.src = './assets/form-2.png';
+//   container.classList.toggle('reverse');
+//   form1.style.display = 'none';
+//   form2.style.display = 'flex';
+// });
 
 btn2.addEventListener('click', (e) => {
   e.preventDefault();
