@@ -41,6 +41,15 @@ userBtn.addEventListener('click', (e) => {
   form2.style.display = 'flex';
 });
 
+placesBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  image.src = './assets/form-2.png';
+  container.classList.toggle('reverse');
+  formChoice.style.display = 'none';
+  form2.style.display = 'flex';
+});
+
 // registerBtn.addEventListener('click', (e) => {
 //   e.preventDefault();
 

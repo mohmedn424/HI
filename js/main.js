@@ -1,3 +1,5 @@
+const signUpBtn = document.querySelector('#sign-up');
+
 const checkbox = document.querySelector('.switch');
 let localTheme = localStorage.getItem('theme');
 

@@ -103,14 +103,20 @@ body {
   margin-bottom: 1em;
   border-radius: 15px;
   background-color: var(--input-bg);
-  border: 2px solid black;
+  border: #222831 2px solid;
+  outline-color: transparent;
   color: #0360c4;
+  transition: 100ms ease-in;
 }
 .container .form-container form .input::-webkit-calendar-picker-indicator {
   filter: var(--invert);
 }
 .container .form-container form .input:focus {
-  outline-color: #048afb;
+  outline-style: solid;
+  outline-color: #0360c4;
+  outline-width: 2px;
+  box-shadow: none;
+  border-color: transparent;
 }
 .container .form-container form .input:focus::-moz-placeholder {
   color: #0360c4;
@@ -159,6 +165,7 @@ body {
 }
 .container .choices .btn-cta-choice {
   cursor: pointer;
+  color: var(--text-color);
   font-size: 1.5em;
   padding: 0.6em;
   border-radius: 15px;

@@ -106,16 +106,23 @@ body {
         margin-bottom: 1em;
         border-radius: 15px;
         background-color: var(--input-bg);
-        border: 2px solid black;
+        // border: 2px solid black;
+        border: #222831 2px solid;
+        outline-color: transparent;
+
         color: #0360c4;
 
+        transition: 100ms ease-in;
         &::-webkit-calendar-picker-indicator {
           filter: var(--invert);
         }
 
         &:focus {
-          outline-color: #048afb;
-          // border-color: #048afb;
+          outline-style: solid;
+          outline-color: #0360c4;
+          outline-width: 2px;
+          box-shadow: none;
+          border-color: transparent;
           &::placeholder {
             color: #0360c4;
           }
@@ -166,6 +173,7 @@ body {
     gap: 1em;
     .btn-cta-choice {
       cursor: pointer;
+      color: var(--text-color);
       font-size: 1.5em;
       padding: 0.6em;
       border-radius: 15px;
