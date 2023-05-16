@@ -256,6 +256,12 @@ nav .profile-info ul .notifi_wrapper .notifiBox .info p {
     transition: 0.3s; */
   color: #919397;
 }
+.home .leftSide ul .leftSideOption img {
+  filter: invert(0.3);
+}
+.home .leftSide ul .leftSideOption.active img {
+  filter: invert(0);
+}
 
 .home .special.col-md-2:hover ul .leftSideOption span {
   opacity: 1;
