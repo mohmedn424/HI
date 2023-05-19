@@ -714,6 +714,10 @@ nav .profile-info ul .notifi_wrapper .notifiBox .info p {
   width: 60px;
 }
 
+.profile-body {
+  margin-left: 10%;
+}
+
 .profileUser .details .img {
   height: 60px;
   width: 158px;
