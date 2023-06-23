@@ -10,17 +10,17 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
-const container = document.querySelector('.container');
-const formChoice = document.querySelector('#form-choice');
-const form1 = document.querySelector('#form-1');
-const form2 = document.querySelector('#form-2');
-const form3 = document.querySelector('#form-3');
-const form4 = document.querySelector('#form-4');
-const btn2 = document.querySelector('#btn-2');
-const btn3 = document.querySelector('#btn-3');
-const userBtn = document.querySelector('#user');
-const placesBtn = document.querySelector('#places');
-const image = document.querySelector('.img');
+// const container = document.querySelector('.container');
+// const formChoice = document.querySelector('#form-choice');
+// const form1 = document.querySelector('#form-1');
+// const form2 = document.querySelector('#form-2');
+// const form3 = document.querySelector('#form-3');
+// const form4 = document.querySelector('#form-4');
+// const btn2 = document.querySelector('#btn-2');
+// const btn3 = document.querySelector('#btn-3');
+// const userBtn = document.querySelector('#user');
+// const placesBtn = document.querySelector('#places');
+// const image = document.querySelector('.img');
 
 // userBtn.addEventListener('click', (e) => {
 //   e.preventDefault();
@@ -49,23 +49,23 @@ const image = document.querySelector('.img');
 //   form2.style.display = 'flex';
 // });
 
-btn2.addEventListener('click', (e) => {
-  e.preventDefault();
+// btn2.addEventListener('click', (e) => {
+//   e.preventDefault();
 
-  console.log('lol');
-  image.src = './assets/form-3.png';
-  container.classList.toggle('reverse');
-  form2.style.display = 'none';
-  form3.style.display = 'flex';
-});
-btn3.addEventListener('click', (e) => {
-  e.preventDefault();
+//   console.log('lol');
+//   image.src = './assets/form-3.png';
+//   container.classList.toggle('reverse');
+//   form2.style.display = 'none';
+//   form3.style.display = 'flex';
+// });
+// btn3.addEventListener('click', (e) => {
+//   e.preventDefault();
 
-  image.src = './assets/form-4.png';
-  container.classList.toggle('reverse');
-  form3.style.display = 'none';
-  form4.style.display = 'flex';
-});
+//   image.src = './assets/form-4.png';
+//   container.classList.toggle('reverse');
+//   form3.style.display = 'none';
+//   form4.style.display = 'flex';
+// });
 
 // The DOM element you wish to replace with Tagify
 var input = document.querySelector('input[name=basic]');
